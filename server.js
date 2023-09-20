@@ -1,17 +1,20 @@
-const express = require("express");
-const colors = require("colors");
+import express from "express";
+import colors from "colors";
+import dotenv from "dotenv";
+
+//configure env
+dotenv.config();
 
 //rest objects
 const app = express();
 
 //rest api
 app.get("/", (req, res) => {
-  res.send({
-    message: "Welcome to home page",
-  });
+  res.send("<h1>Home Page</h1>");
 });
 
-const PORT = 8080;
+//PORT
+const PORT = process.env.PORT || 8080;
 
 //run listen
 app.listen(PORT, () => {
