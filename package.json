@@ -4,7 +4,8 @@
   "description": "ecommerce rest api",
   "main": "index.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "server": "nodemon server.js"
   },
   "keywords": [],
   "author": "amanbarar",
